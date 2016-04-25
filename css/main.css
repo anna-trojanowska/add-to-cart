@@ -1,0 +1,108 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.background {
+    background-color: #e86a6a;
+}
+
+.content p {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding-top: 1em;
+}
+
+.btn {
+    background-color: #93be45;
+    font-family: "Brandon", Helvetica, Arial, sans-serif;
+    color: white;
+    padding: 1em;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0.5em;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: #608e3e;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.btn a {
+    vertical-align: middle;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white; 
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "Brandon", Helvetica, Arial, sans-serif;
+}
+
+.hvr-grow:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.bag {
+    width: 80%;
+    padding: 0.5em;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 20em;
+    display: block;
+}
+
+
+@media only screen and (max-width: 30em) {
+    
+    .btn a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+
+    .btn a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    
+    .btn a {
+        font-size: 18px;
+    }
+}
